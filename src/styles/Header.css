@@ -1,0 +1,65 @@
+.zets-header {
+  position: relative;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 255, 150, 0.1);
+  border-bottom: 1px solid rgba(0, 255, 150, 0.1);
+  z-index: 2;
+}
+
+/* 🔳 Background image layer */
+.zets-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../assets/images/Zets_banner.jpg') repeat-x center center;
+  background-size: auto;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+/* 🌫️ Optional dark overlay layer */
+.zets-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(6, 26, 15, 0.85));
+  z-index: 1;
+}
+
+/* ✨ Foreground content */
+.zets-header-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  animation: floatTitle 8s ease-in-out infinite alternate;
+}
+
+@keyframes floatTitle {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-2px); }
+}
+
+.zets-header-content h1 {
+  font-size: 2.5rem;
+  color: #a8ffce;
+  text-shadow:
+    0 0 6px #00ffcc,
+    0 0 14px #00ffc3,
+    0 0 28px #008866;
+  letter-spacing: 1.2px;
+  margin-bottom: 0.25rem;
+}
+
+.zets-header-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #bfffea;
+  text-shadow: 0 0 4px #228866;
+  opacity: 0.9;
+  margin: 0;
+}

@@ -1,0 +1,35 @@
+.zets-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: rgba(0, 30, 15, 0.55);
+  backdrop-filter: blur(4px);
+  padding: 0.6rem 1.2rem;
+  border: 1px solid rgba(0, 255, 170, 0.08);
+  border-radius: 10px;
+  margin-top: -10px;
+  box-shadow: 0 0 12px rgba(0, 255, 170, 0.12);
+  z-index: 5;
+  position: relative;
+}
+
+/* Nav Links */
+.zets-nav a {
+  color: var(--zets-text);
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover + Active State */
+.zets-nav a:hover,
+.zets-nav a.active {
+  background: var(--zets-highlight);
+  color: #000;
+  box-shadow:
+    0 0 14px var(--zets-highlight),
+    0 0 4px #33ffaa;
+  transform: translateY(-1px);
+}
