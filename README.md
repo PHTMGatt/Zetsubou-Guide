@@ -1,6 +1,6 @@
 # 🌿 Seeds of Doubt – Zetsubou No Shima Easter Egg Guide
 
-![Zetsubou Banner](docs/portfolio/cover.webp)
+![Zetsubou Banner](https://raw.githubusercontent.com/PHTMGatt/12-React-Portfolio/main/src/assets/photos/Zetsubou.png)
 
 A React-based visual walkthrough of the **Zetsubou No Shima** main Easter Egg from *Call of Duty: Black Ops III Zombies*.  
 Follow the mission to save **Takeo Masaki** and complete the **Seeds of Doubt** quest.
